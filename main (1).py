@@ -1,12 +1,13 @@
-num=int(input("please enter the number your wish:"))
-if(num%4==0):
-  if(num%100==0):
-    if(num%400==0):
-      print("%d is a leap year"%num) 
-    else:
-      print("%d is not"%num)
-  else:
-    print("%d ia a leap year"%num)
-else:
-  print("%d is not"%num)
-  
+class player:
+  def play(self):
+    print("the player is playing cricket.")
+class batsman (player):
+  def play(self):
+    print("the batsman is batting.")
+class bowler(player):
+  def play(self):
+    print("the bowler is bowling.")
+batsman = batsman()
+bowler = bowler()
+batsman.play()
+bowler.play()
